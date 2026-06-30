@@ -57,12 +57,9 @@ Dùng `scripts/upload_file.py` + `scripts/generate_video.py` /
 `scripts/batch_generate_videos.py` cho khoảng 5-10 scene có cảm xúc/twist mạnh
 nhất (xem gợi ý trong từng scene ở `scenes.json`). Chi phí ~$0.28-0.55/clip.
 
-## 6. Giọng đọc + ghép final video
-
-- Nếu bạn đã có file giọng đọc (mp3/wav), dùng `scripts/scene_timing.py` để
-  tính thời lượng mỗi scene theo tỷ lệ số ký tự lời thoại.
-- Dùng `scripts/build_final_video.py` để ghép toàn bộ ảnh/video scene +
-  giọng đọc thành video hoàn chỉnh bằng FFmpeg.
+> Bước giọng đọc + ghép video cuối (FFmpeg) **không cần làm** ở pipeline này
+> theo yêu cầu — chỉ dừng lại ở tạo ảnh scene (bước 4) và animate một số scene
+> bằng Kling (bước 5).
 
 ## Sau khi xong
 
